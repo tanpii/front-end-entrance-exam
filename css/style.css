@@ -28,24 +28,22 @@ html {
   outline: none;
 }
 
-/* Определение анимации подпрыгивания */
 @keyframes bounce {
   0% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px); /* Настройте высоту прыжка по вашему усмотрению */
+    transform: translateY(-10px);
   }
   100% {
     transform: translateY(0);
   }
 }
 
-/* Применение анимации при фокусе на контенте, который можно редактировать */
 *[contenteditable="true"]:focus {
   outline: none;
-  animation: bounce 0.5s; /* Примените анимацию */
-  animation-fill-mode: forwards; /* Оставьте последний кадр анимации после завершения */
+  animation: bounce 0.5s;
+  animation-fill-mode: forwards;
 }
 
 
@@ -423,6 +421,7 @@ input[type="range"]::-ms-fill-upper {
 }
 
 #download-btn {
+  cursor: pointer;
   margin: 10px;
   font-family: "Poppins", sans-serif;
   font-size: 12px;
@@ -430,4 +429,8 @@ input[type="range"]::-ms-fill-upper {
   border: none;
   background-color: var(--green-color);
   padding: 5px;
+}
+
+#download-btn:hover {
+  box-shadow: 0 0 5px var(--green-color);
 }
