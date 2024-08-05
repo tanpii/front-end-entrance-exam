@@ -188,6 +188,7 @@ input[type="range"]::-ms-fill-upper {
   font-size: 18px;
   font-weight: 600;
   margin: 0 0 20px 0;
+  width: 100%;
 }
 
 .experience__body {
@@ -244,6 +245,43 @@ input[type="range"]::-ms-fill-upper {
 
 .tools {
   width: 205px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.tools__block {
+  position: relative;
+  max-width: 80%;
+}
+
+.tools__block-name {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--black-color);
+  color: var(--white-color);
+  padding: 5px 20px;
+  border-radius: 59px;
+  font-size: 8px;
+  white-space: nowrap;
+}
+
+.tools__block-container {
+  background-color: var(--white-color);
+  margin-bottom: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 30px 20px;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.tools__block-container img {
+  height: 30px;
 }
 
 .bottom-section {
@@ -331,9 +369,13 @@ input[type="range"]::-ms-fill-upper {
   color: var(--hashtag-green-color);
 }
 
-.education__hastags span {
+.education__hastags-name {
   font-weight: 600;
   color: var(--black-color);
+}
+
+.favourite {
+  color: var(--white-color);
 }
 
 .interests {
@@ -378,4 +420,14 @@ input[type="range"]::-ms-fill-upper {
     flex-direction: column;
     align-items: center;
   }
+}
+
+#download-btn {
+  margin: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--green-color);
+  padding: 5px;
 }
