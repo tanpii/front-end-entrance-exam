@@ -18,413 +18,423 @@
   <body>
     <div id="app">
       <div class="container" id="resume">
-        <div class="header">
-          <div class="photo header__item">
-            <img src="./public/images/avatar.png" alt="Avatar Image" />
+        <div class="photo header__item">
+          <img src="./public/images/avatar.png" alt="Avatar Image" />
+        </div>
+        <div class="occupation header__item ripple-surface">
+          <p class="gretting">Hello 👋🏻 I’m</p>
+          <div class="editable-occupation">
+            <p
+              id="name"
+              contenteditable="true"
+              class="editable-occupation__name"
+            >
+              Karthik SR
+            </p>
+            <p
+              id="occupation"
+              contenteditable="true"
+              class="editable-occupation__occupation"
+            >
+              UX/UI Designer
+            </p>
           </div>
-          <div class="occupation header__item ripple-surface">
-            <p class="gretting">Hello 👋🏻 I’m</p>
-            <div class="editable-occupation">
-              <p
-                id="name"
-                contenteditable="true"
-                class="editable-occupation__name"
-              >
-                Karthik SR
-              </p>
-              <p
-                id="occupation"
-                contenteditable="true"
-                class="editable-occupation__occupation"
-              >
-                UX/UI Designer
-              </p>
-            </div>
+        </div>
+        <div class="languages header__item ripple-surface">
+          <div class="languages__header">Languages</div>
+          <div class="languages__item">
+            <p id="language-english" contenteditable="true">English</p>
+            <input
+              id="language-value1"
+              type="range"
+              min="0"
+              max="100"
+              value="80"
+            />
           </div>
-          <div class="languages header__item ripple-surface">
-            <div class="languages__header">Languages</div>
-            <div class="languages__item">
-              <p id="language-english" contenteditable="true">English</p>
-              <input id="language-value1" type="range" min="0" max="100" value="80" />
-            </div>
-            <div class="languages__item">
-              <p id="language-malayalam" contenteditable="true">Malayalam</p>
-              <input id="language-value2" type="range" min="0" max="100" value="60" />
-            </div>
-            <div class="languages__item">
-              <p id="language-hindi" contenteditable="true">Hindi</p>
-              <input id="language-value3" type="range" min="0" max="100" value="40" />
-            </div>
+          <div class="languages__item">
+            <p id="language-malayalam" contenteditable="true">Malayalam</p>
+            <input
+              id="language-value2"
+              type="range"
+              min="0"
+              max="100"
+              value="60"
+            />
+          </div>
+          <div class="languages__item">
+            <p id="language-hindi" contenteditable="true">Hindi</p>
+            <input
+              id="language-value3"
+              type="range"
+              min="0"
+              max="100"
+              value="40"
+            />
           </div>
         </div>
 
-        <div class="main-section">
-          <div class="experience main-section__item">
-            <div class="main-section__header">Experience</div>
-            <div class="experience__body">
-              <div
-                class="experience__item experience__item-main ripple-surface"
-              >
-                <p class="experience__time">
-                  <span id="experience-time-1" contenteditable="true"
-                    >Jun. 2023 - Present</span
-                  >
-                  <span class="experience__tag">most recent</span>
-                </p>
-                <div class="experience-item__wrapper">
-                  <div class="experience__left">
-                    <p
-                      id="experience-position-1"
-                      class="experience__position"
-                      contenteditable="true"
-                    >
-                      Marketing Manager
-                    </p>
-                    <p
-                      id="experience-details-1"
-                      class="experience__details"
-                      contenteditable="true"
-                    >
-                      Pankayam | Full-time
-                    </p>
-                  </div>
-                  <div class="experience__right">
-                    <p>
-                      •
-                      <span id="experience-details-1-1" contenteditable="true">
-                        Strategy development and planning of campaigns that
-                        promote the business and generate genuine traffic SEO
-                        Content
-                      </span>
-                      <br />
-                      •
-                      <span id="experience-details-1-2" contenteditable="true">
-                        Creation for Blogs, Website, Social media
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="experience__item ripple-surface">
-                <p class="experience__time">
-                  <span id="experience-time-2" contenteditable="true"
-                    >2017 - Present</span
-                  >
-                </p>
-                <div class="experience-item__wrapper">
-                  <div class="experience__left">
-                    <p
-                      id="experience-position-2"
-                      class="experience__position"
-                      contenteditable="true"
-                    >
-                      Graphic / Web designer
-                    </p>
-                    <p
-                      id="experience-details-2"
-                      class="experience__details"
-                      contenteditable="true"
-                    >
-                      Freelance
-                    </p>
-                  </div>
-                  <div class="experience__right">
-                    <p>
-                      •
-                      <span id="experience-details-2-1" contenteditable="true">
-                        Development of internal projects from scratch, product
-                        design of brands
-                      </span>
-                      <br />
-                      •
-                      <span id="experience-details-2-2" contenteditable="true">
-                        Landing page, webapps and hybrid apps
-                      </span>
-                      <br />
-                      •
-                      <span id="experience-details-2-3" contenteditable="true">
-                        Coordinating with outside agencies, art services, web
-                        designer, marketing, printers, and colleagues as
-                        necessary.
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="experience__item ripple-surface">
-                <p class="experience__time">
-                  <span id="experience-time-3" contenteditable="true"
-                    >Sep. 2021 - Jun. 2023</span
-                  >
-                </p>
-                <div class="experience-item__wrapper">
-                  <div class="experience__left">
-                    <p
-                      id="experience-position-3"
-                      class="experience__position"
-                      contenteditable="true"
-                    >
-                      Legal Assistant
-                    </p>
-                    <p
-                      id="experience-details-3"
-                      class="experience__details"
-                      contenteditable="true"
-                    >
-                      Law Firm | Intern
-                    </p>
-                  </div>
-                  <div class="experience__right">
-                    <p>
-                      •
-                      <span id="experience-details-3-1" contenteditable="true">
-                        Provide administrative support to lawyer and enhance
-                        office effectiveness
-                      </span>
-                      <br />
-                      •
-                      <span id="experience-details-3-2" contenteditable="true">
-                        Handle communication with clients, witnesses etc.
-                      </span>
-                      <br />
-                      •
-                      <span id="experience-details-3-3" contenteditable="true">
-                        Repare case briefs and summarize depositions,
-                        interrogatories and testimony
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tools main-section__item">
-            <div class="main-section__header">Tools</div>
-            <div class="tools__block">
-              <span id="tools-design" class="tools__block-name"> design </span>
-              <div class="tools__block-container">
-                <img src="./public/icons/logoFigma.svg" alt="Figma Logo" />
-                <img
-                  src="./public/icons/logoAdobePhotoshop.svg"
-                  alt="Adobe Photoshop Logo"
-                />
-                <img
-                  src="./public/icons/logoAdobeIllustrator.svg"
-                  alt="Adobe Illustrator Logo"
-                />
-                <img
-                  src="./public/icons/logoAdobePremiere.svg"
-                  alt="Adobe Premiere Logo"
-                />
-                <img src="./public/icons/logoNotion.svg" alt="Notion Logo" />
-                <img src="./public/icons/logoMeet.svg" alt="Google Meet Logo" />
-              </div>
-            </div>
-            <div class="tools__block">
-              <span id="tools-no-code" class="tools__block-name">
-                no-code
-              </span>
-              <div class="tools__block-container">
-                <img src="./public/icons/logoZapìer.svg" alt="Zapier Logo" />
-                <img src="./public/icons/logoWebflow.svg" alt="Webflow Logo" />
-                <img src="./public/icons/logoFramer.svg" alt="Framer Logo" />
-                <img
-                  src="./public/icons/logoWordpress.svg"
-                  alt="Wordpress Logo"
-                />
-              </div>
-            </div>
-            <div class="tools__block">
-              <span id="tools-ai" class="tools__block-name">
-                artoficial intelligence
-              </span>
-              <div class="tools__block-container">
-                <img src="./public/icons/logoChatGPT.png" alt="ChatGPT Logo" />
-                <img src="./public/icons/logoCopilot.png" alt="Copilot Logo" />
-                <img
-                  src="./public/icons/logoMidjourney.png"
-                  alt="Midjourney Logo"
-                />
-                <img src="./public/icons/logoFigma.svg" alt="Figma Logo" />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="bottom-section">
-          <div class="education bottom-section__item">
-            <div class="main-section__header">Education</div>
-            <div class="education__box">
-              <div class="education__item education__item-main ripple-surface">
-                <div class="education__header-container">
+        <div class="experience main-section__item">
+          <div class="main-section__header">Experience</div>
+          <div class="experience__body">
+            <div class="experience__item experience__item-main ripple-surface">
+              <p class="experience__time">
+                <span id="experience-time-1" contenteditable="true"
+                  >Jun. 2023 - Present</span
+                >
+                <span class="experience__tag">most recent</span>
+              </p>
+              <div class="experience-item__wrapper">
+                <div class="experience__left">
                   <p
-                    id="education-header-1"
-                    class="education__header"
+                    id="experience-position-1"
+                    class="experience__position"
                     contenteditable="true"
                   >
-                    2023
+                    Marketing Manager
                   </p>
-                  <img
-                    class="heart"
-                    src="./public/icons/heart.svg"
-                    alt="Heart Icon"
-                  />
+                  <p
+                    id="experience-details-1"
+                    class="experience__details"
+                    contenteditable="true"
+                  >
+                    Pankayam | Full-time
+                  </p>
                 </div>
-                <p
-                  id="education-hashtags-1"
-                  class="education__hastags favourite"
-                  contenteditable="true"
-                >
-                  <span class="education__hastags-name favourite"> UI/UX</span><br />#UX #UI #research #DesignSystem #Ui
-                  #wireframing #figma #Ux
-                </p>
-                <p
-                  id="education-place-1"
-                  class="education__place favourite"
-                  contenteditable="true"
-                >
-                  Coursera
-                </p>
+                <div class="experience__right">
+                  <p>
+                    •
+                    <span id="experience-details-1-1" contenteditable="true">
+                      Strategy development and planning of campaigns that
+                      promote the business and generate genuine traffic SEO
+                      Content
+                    </span>
+                    <br />
+                    •
+                    <span id="experience-details-1-2" contenteditable="true">
+                      Creation for Blogs, Website, Social media
+                    </span>
+                  </p>
+                </div>
               </div>
+            </div>
 
-              <div class="education__item ripple-surface">
-                <p
-                  id="education-header-2"
-                  class="education__header"
-                  contenteditable="true"
+            <div class="experience__item ripple-surface">
+              <p class="experience__time">
+                <span id="experience-time-2" contenteditable="true"
+                  >2017 - Present</span
                 >
-                  2017 - 2022
-                </p>
-                <p
-                  id="education-hashtags-2"
-                  class="education__hastags"
-                  contenteditable="true"
-                >
-                  <span> Law</span><br />#law #legalStudies #contracts
-                  #internationalLaws
-                </p>
-                <p
-                  id="education-place-2"
-                  class="education__place"
-                  contenteditable="true"
-                >
-                  University of Kerala
-                </p>
+              </p>
+              <div class="experience-item__wrapper">
+                <div class="experience__left">
+                  <p
+                    id="experience-position-2"
+                    class="experience__position"
+                    contenteditable="true"
+                  >
+                    Graphic / Web designer
+                  </p>
+                  <p
+                    id="experience-details-2"
+                    class="experience__details"
+                    contenteditable="true"
+                  >
+                    Freelance
+                  </p>
+                </div>
+                <div class="experience__right">
+                  <p>
+                    •
+                    <span id="experience-details-2-1" contenteditable="true">
+                      Development of internal projects from scratch, product
+                      design of brands
+                    </span>
+                    <br />
+                    •
+                    <span id="experience-details-2-2" contenteditable="true">
+                      Landing page, webapps and hybrid apps
+                    </span>
+                    <br />
+                    •
+                    <span id="experience-details-2-3" contenteditable="true">
+                      Coordinating with outside agencies, art services, web
+                      designer, marketing, printers, and colleagues as
+                      necessary.
+                    </span>
+                  </p>
+                </div>
               </div>
+            </div>
 
-              <div class="education__item ripple-surface">
-                <p
-                  id="education-header-3"
-                  class="education__header"
-                  contenteditable="true"
+            <div class="experience__item ripple-surface">
+              <p class="experience__time">
+                <span id="experience-time-3" contenteditable="true"
+                  >Sep. 2021 - Jun. 2023</span
                 >
-                  2017
-                </p>
-                <p
-                  id="education-hashtags-3"
-                  class="education__hastags"
-                  contenteditable="true"
-                >
-                  <span> Graphic design</span><br />#branding #web #illustration
-                  #adobe
-                </p>
-                <p
-                  id="education-place-3"
-                  class="education__place"
-                  contenteditable="true"
-                >
-                  Coursera
-                </p>
+              </p>
+              <div class="experience-item__wrapper">
+                <div class="experience__left">
+                  <p
+                    id="experience-position-3"
+                    class="experience__position"
+                    contenteditable="true"
+                  >
+                    Legal Assistant
+                  </p>
+                  <p
+                    id="experience-details-3"
+                    class="experience__details"
+                    contenteditable="true"
+                  >
+                    Law Firm | Intern
+                  </p>
+                </div>
+                <div class="experience__right">
+                  <p>
+                    •
+                    <span id="experience-details-3-1" contenteditable="true">
+                      Provide administrative support to lawyer and enhance
+                      office effectiveness
+                    </span>
+                    <br />
+                    •
+                    <span id="experience-details-3-2" contenteditable="true">
+                      Handle communication with clients, witnesses etc.
+                    </span>
+                    <br />
+                    •
+                    <span id="experience-details-3-3" contenteditable="true">
+                      Repare case briefs and summarize depositions,
+                      interrogatories and testimony
+                    </span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="bottom__right-side">
-            <div class="interests bottom-section__item ripple-surface">
-              <div class="main-section__header">Interests</div>
-              <div class="interests__box">
-                <div
-                  id="interest-branding"
-                  class="interests__item"
-                  contenteditable="true"
-                >
-                  branding
-                </div>
-                <div
-                  id="interest-design"
-                  class="interests__item"
-                  contenteditable="true"
-                >
-                  design
-                </div>
-                <div
-                  id="interest-photography"
-                  class="interests__item"
-                  contenteditable="true"
-                >
-                  photography
-                </div>
-                <div
-                  id="interest-ai"
-                  class="interests__item"
-                  contenteditable="true"
-                >
-                  artificial intelligence
-                </div>
-                <div
-                  id="interest-illustration"
-                  class="interests__item"
-                  contenteditable="true"
-                >
-                  illustration
-                </div>
-                <div
-                  id="interest-typography"
-                  class="interests__item"
-                  contenteditable="true"
-                >
-                  typography
-                </div>
-                <div
-                  id="interest-social-networks"
-                  class="interests__item"
-                  contenteditable="true"
-                >
-                  social networks
-                </div>
-                <div
-                  id="interest-research"
-                  class="interests__item"
-                  contenteditable="true"
-                >
-                  research
-                </div>
-                <div
-                  id="interest-dron-pilot"
-                  class="interests__item"
-                  contenteditable="true"
-                >
-                  dron pilot
-                </div>
-                <div
-                  id="interest-games"
-                  class="interests__item"
-                  contenteditable="true"
-                >
-                  games
-                </div>
-              </div>
+        </div>
+
+        <div class="tools main-section__item">
+          <div class="main-section__header">Tools</div>
+          <div class="tools__block">
+            <span id="tools-design" class="tools__block-name"> design </span>
+            <div class="tools__block-container">
+              <img src="./public/icons/logoFigma.svg" alt="Figma Logo" />
+              <img
+                src="./public/icons/logoAdobePhotoshop.svg"
+                alt="Adobe Photoshop Logo"
+              />
+              <img
+                src="./public/icons/logoAdobeIllustrator.svg"
+                alt="Adobe Illustrator Logo"
+              />
+              <img
+                src="./public/icons/logoAdobePremiere.svg"
+                alt="Adobe Premiere Logo"
+              />
+              <img src="./public/icons/logoNotion.svg" alt="Notion Logo" />
+              <img src="./public/icons/logoMeet.svg" alt="Google Meet Logo" />
             </div>
-            <div class="bottom-section__item contacts">
-              <div class="main-section__header bottom-section__header">
-                Let´s chat! I´m ready to work on exciting projects
+          </div>
+          <div class="tools__block">
+            <span id="tools-no-code" class="tools__block-name"> no-code </span>
+            <div class="tools__block-container">
+              <img src="./public/icons/logoZapìer.svg" alt="Zapier Logo" />
+              <img src="./public/icons/logoWebflow.svg" alt="Webflow Logo" />
+              <img src="./public/icons/logoFramer.svg" alt="Framer Logo" />
+              <img
+                src="./public/icons/logoWordpress.svg"
+                alt="Wordpress Logo"
+              />
+            </div>
+          </div>
+          <div class="tools__block">
+            <span id="tools-ai" class="tools__block-name">
+              artoficial intelligence
+            </span>
+            <div class="tools__block-container">
+              <img src="./public/icons/logoChatGPT.png" alt="ChatGPT Logo" />
+              <img src="./public/icons/logoCopilot.png" alt="Copilot Logo" />
+              <img
+                src="./public/icons/logoMidjourney.png"
+                alt="Midjourney Logo"
+              />
+              <img src="./public/icons/logoFigma.svg" alt="Figma Logo" />
+            </div>
+          </div>
+        </div>
+
+        <div class="education bottom-section__item">
+          <div class="main-section__header">Education</div>
+          <div class="education__box">
+            <div class="education__item education__item-main ripple-surface">
+              <div class="education__header-container">
+                <p
+                  id="education-header-1"
+                  class="education__header"
+                  contenteditable="true"
+                >
+                  2023
+                </p>
+                <img
+                  class="heart"
+                  src="./public/icons/heart.svg"
+                  alt="Heart Icon"
+                />
               </div>
-              <p id="contact-email" contenteditable="true" class="contact">
-                srkarthik.designscape@gmail.com
+              <p
+                id="education-hashtags-1"
+                class="education__hastags favourite"
+                contenteditable="true"
+              >
+                <span class="education__hastags-name favourite"> UI/UX</span
+                ><br />#UX #UI #research #DesignSystem #Ui #wireframing #figma
+                #Ux
+              </p>
+              <p
+                id="education-place-1"
+                class="education__place favourite"
+                contenteditable="true"
+              >
+                Coursera
+              </p>
+            </div>
+
+            <div class="education__item ripple-surface">
+              <p
+                id="education-header-2"
+                class="education__header"
+                contenteditable="true"
+              >
+                2017 - 2022
+              </p>
+              <p
+                id="education-hashtags-2"
+                class="education__hastags"
+                contenteditable="true"
+              >
+                <span> Law</span><br />#law #legalStudies #contracts
+                #internationalLaws
+              </p>
+              <p
+                id="education-place-2"
+                class="education__place"
+                contenteditable="true"
+              >
+                University of Kerala
+              </p>
+            </div>
+
+            <div class="education__item ripple-surface">
+              <p
+                id="education-header-3"
+                class="education__header"
+                contenteditable="true"
+              >
+                2017
+              </p>
+              <p
+                id="education-hashtags-3"
+                class="education__hastags"
+                contenteditable="true"
+              >
+                <span> Graphic design</span><br />#branding #web #illustration
+                #adobe
+              </p>
+              <p
+                id="education-place-3"
+                class="education__place"
+                contenteditable="true"
+              >
+                Coursera
               </p>
             </div>
           </div>
+        </div>
+
+        <div class="interests bottom-section__item ripple-surface">
+          <div class="main-section__header">Interests</div>
+          <div class="interests__box">
+            <div
+              id="interest-branding"
+              class="interests__item"
+              contenteditable="true"
+            >
+              branding
+            </div>
+            <div
+              id="interest-design"
+              class="interests__item"
+              contenteditable="true"
+            >
+              design
+            </div>
+            <div
+              id="interest-photography"
+              class="interests__item"
+              contenteditable="true"
+            >
+              photography
+            </div>
+            <div
+              id="interest-ai"
+              class="interests__item"
+              contenteditable="true"
+            >
+              artificial intelligence
+            </div>
+            <div
+              id="interest-illustration"
+              class="interests__item"
+              contenteditable="true"
+            >
+              illustration
+            </div>
+            <div
+              id="interest-typography"
+              class="interests__item"
+              contenteditable="true"
+            >
+              typography
+            </div>
+            <div
+              id="interest-social-networks"
+              class="interests__item"
+              contenteditable="true"
+            >
+              social networks
+            </div>
+            <div
+              id="interest-research"
+              class="interests__item"
+              contenteditable="true"
+            >
+              research
+            </div>
+            <div
+              id="interest-dron-pilot"
+              class="interests__item"
+              contenteditable="true"
+            >
+              dron pilot
+            </div>
+            <div
+              id="interest-games"
+              class="interests__item"
+              contenteditable="true"
+            >
+              games
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-section__item contacts">
+          <div class="main-section__header bottom-section__header">
+            Let´s chat! I´m ready to work on exciting projects
+          </div>
+          <p id="contact-email" contenteditable="true" class="contact">
+            srkarthik.designscape@gmail.com
+          </p>
         </div>
       </div>
       <button id="download-btn">Download PDF</button>

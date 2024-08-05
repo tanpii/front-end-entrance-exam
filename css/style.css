@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 :root {
   --white-color: #fff;
@@ -46,10 +46,27 @@ html {
   animation-fill-mode: forwards;
 }
 
+#app {
+  height: fit-content;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  overflow-x: hidden;
+}
 
 .container {
-  max-width: 1140px;
-  margin: 0 auto;
+  max-width: 800px;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "photo occupation languages languages"
+    "experience experience experience tools"
+    "education education interests interests"
+    "education education contacts contacts";
+  gap: 20px;
+  justify-items: stretch;
 }
 
 .header {
@@ -69,6 +86,7 @@ html {
 }
 
 .photo {
+  grid-area: photo;
   background-color: var(--dark-grey-color);
   overflow: hidden;
 }
@@ -79,6 +97,9 @@ html {
 }
 
 .occupation {
+  min-width: 200px;
+  width: 100%;
+  grid-area: occupation;
   padding: 20px;
   background-color: var(--grey-color);
   display: flex;
@@ -97,7 +118,8 @@ html {
 }
 
 .languages {
-  width: 400px;
+  width: 100%;
+  grid-area: languages;
   padding: 20px;
   background-color: var(--grey-color);
   display: flex;
@@ -123,7 +145,7 @@ html {
     overflow: hidden;
     width: 70%;
     border-radius: 5px;
-    cursor: ew-resize;   
+    cursor: ew-resize;
     background-color: transparent;
   }
 
@@ -179,7 +201,8 @@ input[type="range"]::-ms-fill-upper {
 }
 
 .experience {
-  width: 605px;
+  grid-area: experience;
+  width: 100%;
 }
 
 .main-section__header {
@@ -242,6 +265,7 @@ input[type="range"]::-ms-fill-upper {
 }
 
 .tools {
+  grid-area: tools;
   width: 205px;
   display: flex;
   flex-flow: column;
@@ -291,6 +315,7 @@ input[type="range"]::-ms-fill-upper {
 }
 
 .education {
+  grid-area: education;
   width: 405px;
 }
 
@@ -321,6 +346,7 @@ input[type="range"]::-ms-fill-upper {
 }
 
 .contacts {
+  grid-area: contacts;
   background: var(--black-color);
   color: var(--white-color);
 }
@@ -377,7 +403,7 @@ input[type="range"]::-ms-fill-upper {
 }
 
 .interests {
-  margin: 0 0 20px 0;
+  grid-area: interests;
 }
 
 .ripple-surface {
@@ -410,17 +436,8 @@ input[type="range"]::-ms-fill-upper {
   }
 }
 
-@media (max-width: 680px) {
-  .container {
-    max-width: 500px;
-  }
-  .header-section {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 #download-btn {
+  width: fit-content;
   cursor: pointer;
   margin: 10px;
   font-family: "Poppins", sans-serif;
@@ -433,4 +450,69 @@ input[type="range"]::-ms-fill-upper {
 
 #download-btn:hover {
   box-shadow: 0 0 5px var(--green-color);
+}
+
+@media (max-width: 903px) {
+  .container {
+    max-width: 600px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+      "occupation photo"
+      "languages languages"
+      "experience experience"
+      "education tools"
+      "interests interests"
+      "contacts contacts";
+    gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+  }
+  .occupation {
+    min-width: 150px;
+  }
+}
+
+@media (max-width: 603px) {
+  .container {
+    max-width: 350px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+      "photo occupation"
+      "languages languages"
+      "experience experience"
+      "education education"
+      "tools tools"
+      "interests interests"
+      "contacts contacts";
+    justify-items: stretch;
+    align-items: stretch;
+  }
+
+  .education {
+    grid-area: education;
+    width: 350px;
+  }
+
+  .tools {
+    width: 100%;
+    align-items: center;
+  }
+
+  .tools__block {
+    width: 100%;
+  }
+
+  .header__item {
+    min-width: 150px;
+  }
+
+  .occupation {
+    min-width: 150px;
+  }
 }
